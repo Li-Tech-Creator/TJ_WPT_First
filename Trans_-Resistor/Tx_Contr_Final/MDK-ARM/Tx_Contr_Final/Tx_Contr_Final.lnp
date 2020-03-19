@@ -1,0 +1,33 @@
+--cpu Cortex-M3
+"tx_contr_final\startup_stm32f103xe.o"
+"tx_contr_final\main.o"
+"tx_contr_final\gpio.o"
+"tx_contr_final\usart.o"
+"tx_contr_final\stm32f1xx_it.o"
+"tx_contr_final\tim.o"
+"tx_contr_final\adc.o"
+"tx_contr_final\dma.o"
+"tx_contr_final\stm32f1xx_hal_msp.o"
+"tx_contr_final\iwdg.o"
+"tx_contr_final\system_stm32f1xx.o"
+"tx_contr_final\stm32f1xx_hal_tim.o"
+"tx_contr_final\stm32f1xx_hal_rcc.o"
+"tx_contr_final\stm32f1xx_hal.o"
+"tx_contr_final\stm32f1xx_hal_rcc_ex.o"
+"tx_contr_final\stm32f1xx_hal_gpio.o"
+"tx_contr_final\stm32f1xx_hal_tim_ex.o"
+"tx_contr_final\stm32f1xx_hal_adc.o"
+"tx_contr_final\stm32f1xx_hal_adc_ex.o"
+"tx_contr_final\stm32f1xx_hal_gpio_ex.o"
+"tx_contr_final\stm32f1xx_hal_flash.o"
+"tx_contr_final\stm32f1xx_hal_flash_ex.o"
+"tx_contr_final\stm32f1xx_hal_pwr.o"
+"tx_contr_final\stm32f1xx_hal_dma.o"
+"tx_contr_final\stm32f1xx_hal_uart.o"
+"tx_contr_final\stm32f1xx_hal_cortex.o"
+"tx_contr_final\stm32f1xx_hal_iwdg.o"
+--library_type=microlib --strict --scatter "Tx_Contr_Final\Tx_Contr_Final.sct"
+
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Tx_Contr_Final.map" -o Tx_Contr_Final\Tx_Contr_Final.axf
